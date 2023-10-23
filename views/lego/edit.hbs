@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/add.css">
+</head>
+<body>
+
+  <form action="/lego/edit/{{lego._id}}" method="post">
+    <label >Name:</label>
+    <input type="text" id="name" name="name" value = "{{lego.name}}" required>
+
+    <label >Type:</label>
+     <select aria-label="select a type" name="type" required> 
+        <option value="Monster lego ">Ninja lego </option> 
+        <option value="Magic lego "> Monster lego </option> 
+        </select>
+
+    <label >Image:</label>
+    <input type="text" id="name" name="image" value = "{{lego.image}}" required>
+
+    <label >Origin:</label>
+    <input type="text" id="name" name="origin" value = "{{lego.origin}}" required>
+
+    <label >Price:</label>
+    <input type="text" id="email" name="price" value = "{{lego.price}}" required>
+
+    <label >Description:</label>
+    <input type="text" id="age" name="description" value = "{{lego.description}}" required>
+
+    <button type="submit">Add lego</button>
+  </form>
+
+</body>
+</html>
