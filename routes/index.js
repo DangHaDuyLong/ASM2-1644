@@ -3,7 +3,7 @@ const UserModel = require('../models/UserModel');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('home/index');
+  res.redirect('/home');
 })
 
 router.post('/', async (req, res) => {
